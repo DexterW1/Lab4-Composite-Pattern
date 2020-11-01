@@ -1,7 +1,13 @@
 #ifndef __RAND__
 #define __RAND__
 
+
+
 #include <string>
+#include <stdlib.h>
+
+using namespace std;
+ 
 
 class Rand : public Base
 {
@@ -14,14 +20,14 @@ class Rand : public Base
 		}
 		double evaluate()
 		{
-			return value;
+			return value->evaluate();
 		}
-		std::string stringify()
+		string stringify()
 		{
-			return to_string(value);
+			return to_string(value->evaluate());
 		}
 
 
-}
+};
 
 #endif

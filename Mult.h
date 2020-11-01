@@ -13,10 +13,10 @@ class Mult : public Operate
 		
 		std::string stringify()
 		{
-			return "( " + left->stringify() + ") " + "*" + "( " right->stringify() + ")";
+			return "( " + left->stringify() + ") " + "*" + "( " +  right->stringify() + ")";
 		}
 
-}
+};
 
 
 
