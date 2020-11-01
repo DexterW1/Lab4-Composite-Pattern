@@ -1,5 +1,7 @@
 #ifndef __MULT__
 #define __MULT__
+
+#include "Operator.h"
 class Mult : public Operate
 {
 	public: 
