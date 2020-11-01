@@ -9,10 +9,15 @@ class Op : public Base {
 
     public:
         Op(double value) : Base() {
-	val = value;		
- 	}
-        virtual double evaluate() { return val; }
-        virtual std::string stringify() { return to_string(val); }
+	      val = value;		
+ 	      }
+
+        double evaluate() { return val; }
+        std::string stringify() {
+		    return std::to_string(val);
+	       }
+
 };
+
 
 #endif //__OP_HPP__
