@@ -24,7 +24,9 @@ class Rand : public Base
 		}
 		string stringify()
 		{
-			return to_string(value->evaluate());
+			string result = to_string(value->evaluate());
+			return result;
+
 		}
 
 

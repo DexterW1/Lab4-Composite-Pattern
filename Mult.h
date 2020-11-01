@@ -5,7 +5,7 @@
 class Mult : public Operate
 {
 	public: 
-		Mult(Op* left, Op* right): Operate(left,right) {};
+		Mult(Base* left, Base* right): Operate(left,right) {};
 		double evaluate()	
  		{
 			return left->evaluate() * right->evaluate();
