@@ -18,9 +18,7 @@ int main(){
     Base* mult = new Mult(seven, four);
     Base* add = new Add(three, mult);
     Base* minus = new Sub(add, two);
-    Base* pow = new Pow(four,two);
     
-    std::cout << pow->stringify() << " = " <<pow->evaluate()<<std::endl;
     std::cout << minus->stringify() << " = " << minus->evaluate() << std::endl;
     return 0;
 }

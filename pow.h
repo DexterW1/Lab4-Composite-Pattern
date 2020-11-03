@@ -10,7 +10,12 @@ class Pow: public Operate {
 		Pow(Base* left,Base* right): Operate(left,right) {};
 
 		double evaluate() {
-			return  pow(left->evaluate(),right->evaluate());
+			if(right->evaluate() == 0){
+				std::cout<<"**Trying to raise to the power of 0**"<<std::endl;
+			}
+			else{
+				return  pow(left->evaluate(),right->evaluate());
+			}
 		}
 		std::string stringify(){
 			return "(" + left->stringify() +")" + "**"+ right->stringify() + ")";

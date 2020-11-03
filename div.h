@@ -9,7 +9,12 @@ class Div: public Operate {
 		Div(Base* left,Base* right): Operate(left,right) {};
 
 		double evaluate() {
-			return left->evaluate() / right->evaluate();
+			if(right->evaluate()== 0){
+				std::cout<<"Trying to divide by 0"<<std::endl;
+			}
+			else{
+				return left->evaluate() / right->evaluate();
+			}
 		}
 		std::string stringify(){
 			return "(" + left->stringify() +")" + "/"+ right->stringify() + ")";
