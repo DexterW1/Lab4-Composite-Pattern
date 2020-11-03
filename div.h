@@ -9,6 +9,11 @@ class Div: public Operate {
 		Div(Base* left,Base* right): Operate(left,right) {};
 
 		double evaluate() {
+			if(right->evaluate() == 0)
+			{	
+				//cout << "Error: Cant divide by 0";
+				return 0;
+			}
 			return left->evaluate() / right->evaluate();
 		}
 		std::string stringify(){
