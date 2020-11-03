@@ -30,7 +30,7 @@ TEST(multTest, multby0)
 TEST(addTest, add0)
 {
 	Base* add = new add(ten, zero);
-	EXPECT_EQ(add-evaluate(), 10);
+	EXPECT_EQ(add->evaluate(), 10);
 }
 
 int main(int argc, char **argv) {
