@@ -30,7 +30,7 @@ TEST(divTest, divideby2) {
 
 TEST(divTest, dividestringify) {
         Base* div = new Div(ten, two);
-        EXPECT_EQ(div->stringify(), "(10.00000)/(2.00000)");
+        EXPECT_EQ(div->stringify(), "(10.000000)/(2.000000)");
 
 }
 
@@ -46,7 +46,7 @@ TEST(multTest, multby0)
 TEST(multTest, multstringify)
 {
 	Base* mult = new Mult(ten, zero);
-	EXPECT_EQ(mult->stringify(), "(10.00000)*(0.00000)");
+	EXPECT_EQ(mult->stringify(), "(10.000000)*(0.000000)");
 
 }
 TEST(addTest, add0)
@@ -57,7 +57,7 @@ TEST(addTest, add0)
 TEST(addTest, addstringify)
 {
         Base* add = new Add(ten, zero);
-        EXPECT_EQ(add->stringify(), "(10.00000)+(0.00000)");
+        EXPECT_EQ(add->stringify(), "(10.000000)+(0.000000)");
 }
 TEST(subTest, sub0)
 {
@@ -67,7 +67,7 @@ TEST(subTest, sub0)
 TEST(subTest, substringify)
 {
         Base* add = new Sub(ten, zero);
-        EXPECT_EQ(add->stringify(), "(10.00000)-(0.00000)");
+        EXPECT_EQ(add->stringify(), "(10.000000)-(0.000000)");
 }
 TEST(powTest, pow4squared)
 {
@@ -78,7 +78,7 @@ TEST(powTest, pow4squared)
 TEST(powTest, powstringify)
 {
 	Base* pow = new Pow(four, five);
-	EXPECT_EQ(pow->stringify(), "(4.00000) ^ (5.00000)");
+	EXPECT_EQ(pow->stringify(), "(4.000000)^(5.000000)");
 }
 TEST(randTest, returnsnum)
 {

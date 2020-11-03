@@ -13,7 +13,7 @@ class Pow: public Operate {
 			return  pow(left->evaluate(),right->evaluate());
 		}
 		std::string stringify(){
-			return "(" + left->stringify() +")" + "**"+ right->stringify() + ")";
+			return "(" + left->stringify() +")" + "^" +  "(" + right->stringify() + ")";
 		}
 };
 #endif //__POW_H__  
