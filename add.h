@@ -12,7 +12,7 @@ class Add: public Operate {
 			return left->evaluate() + right->evaluate();
 		}
 		std::string stringify(){
-			return "(" + left->stringify() +")" + "+"+ right->stringify() + ")";
+			return "(" + left->stringify() +")" + "+"+ "(" + right->stringify() + ")";
 		}
 };
 #endif //__Add_H__  
