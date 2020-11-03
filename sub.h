@@ -7,7 +7,7 @@ class Sub: public Operate {
 	public:
 		Sub(Base* left,Base* right): Operate(left,right) {};
 
-		double evaluate() {
+		double evaluate(){
 			return left->evaluate() - right->evaluate();
 		}
 		std::string stringify(){
